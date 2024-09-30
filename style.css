@@ -1,127 +1,141 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:200');
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:200");
 
-html, body {
-	height: 100vh;
-	min-height: 100%;
-	text-align: center;
+html,
+body {
+  height: 100vh;
+  min-height: 100%;
+  text-align: center;
 }
 
 body {
-	margin: 5vw;
-	padding: 0;
-	background-attachment: fixed;
-	background-color: #000;
-	background-image: url('images/light.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	box-sizing: border-box;
-	-webkit-background-size: cover !important;
+  margin: 5vw;
+  padding: 0;
+  background-attachment: fixed;
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  -webkit-background-size: cover !important;
+}
+
+body:before {
+  content: " ";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-image: url(images/IMG01029-extended.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  pointer-events: none;
+  mix-blend-mode: difference;
 }
 
 div {
-	margin: 25px 0 0 0;
+  margin: 25px 0 0 0;
 }
 
-div.intro {	
-	font-size: 20pt;
-	letter-spacing: -1px;
+div.intro {
+  font-size: 20pt;
+  letter-spacing: -1px;
 }
 
 div.icons {
-	cursor: default;
-	text-align: justify;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-div:after {
-	content: '';
-	display: inline-block;
-	width: 100%;
+div.icons > a {
+  flex: 1 0 25%;
+  height: 50px;
+  text-align: center;
 }
 
 div.icons i {
-	display: inline-block;
-	font-size: 1em;
-	vertical-align: bottom;
+  display: inline-block;
+  font-size: 1em;
+  vertical-align: bottom;
 }
 
 div.icons img {
-	display: inline-block;
-	max-width: 1em;
-	max-height: 1em;
-	width: 100%;
-	height: 100%;
-	vertical-align: bottom;
+  display: inline-block;
+  max-width: 1em;
+  max-height: 1em;
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
 }
 
 a {
-	color: #fff;
+  color: #fff;
 }
 
 img {
-	width: 80vw;
+  width: 80vw;
 }
 
 h1 {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 section {
-	color: #fff;
-	display: inline-block;
-	font-family: 'Work Sans', 'Arial Unicode MS', 'Arial', 'Helvetica', sans-serif;
-	font-weight: 200;
-	text-align: left;
-	font-size: 20pt;
-	letter-spacing: -1.5pt;
-	width: 70vw;
+  color: #fff;
+  display: inline-block;
+  font-family: "Work Sans", "Arial Unicode MS", "Arial", "Helvetica", sans-serif;
+  font-weight: 200;
+  text-align: left;
+  font-size: 20pt;
+  letter-spacing: -1.5pt;
+  width: 70vw;
 }
 
 ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-	font-size: 12pt;
-	letter-spacing: -1px;
-	margin: 0 0 11px 0;
+  font-size: 12pt;
+  letter-spacing: -1px;
+  margin: 0 0 11px 0;
 }
 
-@media screen and (min-width:35.5em) {
-	h1 {
-		font-size: 2em;
-	}
+@media screen and (min-width: 35.5em) {
+  h1 {
+    font-size: 2em;
+  }
 
-	li {
-		font-size: 1em;
-		letter-spacing: -0.9pt;
-	}
+  li {
+    font-size: 1em;
+    letter-spacing: -0.9pt;
+  }
 
-	div {
-		margin: 44px 0 0 0;
-	}
+  div {
+    margin: 44px 0 0 0;
+  }
 
-	div.intro {
-		letter-spacing: -0.9pt;
-	}
+  div.intro {
+    letter-spacing: -0.9pt;
+  }
 }
 
-@media screen and (min-width:48em) {
-	
-	div.icons i,
-	div.icons img {
-		font-size: 1.5em;
-	}
+@media screen and (min-width: 48em) {
+  div.icons i,
+  div.icons img {
+    font-size: 1.5em;
+  }
 
+  div.icons > a {
+    flex: 1;
+  }
 }
 
-@media screen and (min-width:64em) {
-	div.icons {
-		width: 60%;
-	}
+@media screen and (min-width: 64em) {
 }
