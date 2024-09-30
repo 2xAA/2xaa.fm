@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  margin: 5vw;
+  margin: 0;
   padding: 0;
   background-attachment: fixed;
   background-color: #000;
@@ -34,6 +34,12 @@ body:before {
   background-size: cover;
   pointer-events: none;
   mix-blend-mode: difference;
+}
+
+header {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
 }
 
 div {
@@ -93,6 +99,9 @@ section {
   font-size: 20pt;
   letter-spacing: -1.5pt;
   width: 70vw;
+  position: relative;
+  padding: 0 15vw 5vw 15vw;
+  background-image: linear-gradient(0, black, transparent);
 }
 
 ul {
