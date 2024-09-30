@@ -17,6 +17,7 @@ body {
   background-size: cover;
   box-sizing: border-box;
   -webkit-background-size: cover !important;
+  font-family: "Work Sans", "Arial Unicode MS", "Arial", "Helvetica", sans-serif;
 }
 
 body:before {
@@ -90,18 +91,20 @@ h1 {
   text-transform: uppercase;
 }
 
+main {
+  background-image: linear-gradient(0, black, transparent);
+  position: relative;
+}
+
 section {
   color: #fff;
   display: inline-block;
-  font-family: "Work Sans", "Arial Unicode MS", "Arial", "Helvetica", sans-serif;
   font-weight: 200;
   text-align: left;
   font-size: 20pt;
   letter-spacing: -1.5pt;
   width: 70vw;
-  position: relative;
   padding: 0 15vw 5vw 15vw;
-  background-image: linear-gradient(0, black, transparent);
 }
 
 ul {
@@ -113,6 +116,9 @@ ul {
 li {
   font-size: 12pt;
   letter-spacing: -1px;
+}
+
+li:not(:last-child) {
   margin: 0 0 11px 0;
 }
 
@@ -146,5 +152,6 @@ li {
   }
 }
 
-@media screen and (min-width: 64em) {
+footer {
+  padding-bottom: 5vw;
 }
