@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:200");
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap");
 
 html,
 body {
@@ -17,7 +17,9 @@ body {
   background-size: cover;
   box-sizing: border-box;
   -webkit-background-size: cover !important;
-  font-family: "Work Sans", "Arial Unicode MS", "Arial", "Helvetica", sans-serif;
+  font-family: "Inter", "Arial Unicode MS", "Arial", "Helvetica", sans-serif;
+  font-weight: 700;
+  letter-spacing: normal;
 }
 
 body:before {
