@@ -107,6 +107,7 @@ section {
   letter-spacing: -1.5pt;
   width: 70vw;
   padding: 0 15vw 5vw 15vw;
+  box-sizing: border-box;
 }
 
 ul {
